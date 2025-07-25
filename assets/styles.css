@@ -4,12 +4,14 @@ body {
   background: #e3f6ff;
   color: #00334e;
 }
-header {
-  background-color: #0077b6;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+/* Header with custom Pacifico font */
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  color: #0077b6; /* Ocean blue */
+  margin: 0.5rem 0;
 }
+
 nav a {
   color: white;
   margin: 0 1rem;
