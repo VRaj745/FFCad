@@ -16,14 +16,16 @@ nav a {
   text-decoration: none;
 }
 .hero {
+  position: relative;
   background: url('../assets/images/prawns-large.jpg') center/cover no-repeat;
   text-align: center;
   padding: 6rem 1rem;
   color: white;
-  backdrop-filter: blur(5px);
-  background-color: rgba(0, 119, 182, 0.4);
-  border-left: 8px solid #90e0ef;
-  border-right: 8px solid #90e0ef;
+  border-left: 8px solid #0077b6;  /* ocean blue */
+  border-right: 8px solid #0077b6;
+  background-color: rgba(0, 119, 182, 0.4); /* ocean blue with transparency */
+  backdrop-filter: blur(8px); /* glass blur effect */
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .hero .btn {
