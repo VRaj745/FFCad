@@ -1,21 +1,26 @@
-/* Elegant Header with Playfair Display font */
-header h1 {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 2.7rem;
-  font-weight: 700;
-  color: #023e8a; /* Deep ocean blue */
-  margin: 0.5rem 0;
+/* Fonts & Reset */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
-/* Header container */
+/* Header */
 header {
-  background-color: #ffffff;
+  background-color: white;
   padding: 1rem;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigation bar */
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin: 0.3rem;
+  color: #0077b6;
+}
+
 nav {
   margin-top: 0.5rem;
 }
@@ -23,31 +28,47 @@ nav {
 nav a {
   margin: 0 1rem;
   text-decoration: none;
-  color: #0077b6;
-  font-weight: bold;
-  transition: color 0.3s;
+  color: #023e8a;
+  font-weight: 600;
 }
 
 nav a:hover {
-  color: #023e8a;
+  color: #0077b6;
 }
 
-/* Hero section */
+/* Hero Section */
 .hero {
-  background-image: url('assets/images/hero-bg.jpg');
+  background-image: url('assets/images/hero-bg.jpg'); /* Use real path to prawn image */
   background-size: cover;
   background-position: center;
   padding: 5rem 2rem;
   text-align: center;
   color: white;
-  border: 8px solid #0077b6;
+  position: relative;
   border-radius: 12px;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 2rem auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 51, 102, 0.4); /* semi-transparent ocean overlay */
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
 }
 
 .hero h2 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
@@ -73,7 +94,7 @@ nav a:hover {
 
 /* Footer */
 footer {
-  background-color: #f0f0f0;
+  background-color: #eeeeee;
   padding: 1rem;
   text-align: center;
   color: #333;
